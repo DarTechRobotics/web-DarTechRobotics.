@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dar.css">
+    <title>Crear Cuenta - DarTech Robotics</title>
+</head>
+<body style="background-color: rgb(17, 80, 110); color: white; font-family: Arial, sans-serif; padding: 20px;">
+    <div style="text-align: center; margin-top: 50px;">
+        <h2 style="font-size: 1.5em;">¡Crea tu cuenta!</h2>
+        <form id="create-account-form">
+            <input type="text" id="username-input" name="username" placeholder="Nombre de usuario" required style="padding: 8px; margin-left: 300px 0; width: 80%; border-radius: 5px; font-size: 0.9em;">
+            <input type="email" name="email" placeholder="Correo electrónico" required style="padding: 8px; margin: 8px 0; width: 80%; border-radius: 5px; font-size: 0.9em;">
+            <input type="password" name="password" placeholder="Contraseña" required style="padding: 8px; margin-left: 120px; 0; width: 80%; border-radius: 5px; font-size: 0.9em;">
+            <input type="submit" value="Crear cuenta" style="padding: 8px 18px; background-color: #333; color: white; border: none; cursor: pointer; border-radius: 5px; font-size: 0.9em;">
+        </form>
+        <p style="margin-top: 20px; font-size: 0.9em;">
+            ¿Ya tienes cuenta? <a href="dare.html" style="color: #25d366; font-size: 0.9em;">Inicia sesión</a>
+        </p>
+    </div>
+
+    <script>
+        // Capturar el envío del formulario
+        document.getElementById('create-account-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evitar que se recargue la página
+
+            // Obtener el nombre de usuario
+            const username = document.getElementById('username-input').value;
+
+            // Guardar el nombre de usuario en localStorage
+            localStorage.setItem('username', username);
+
+            // Redirigir a la página principal (dare.html)
+            window.location.href = 'dare.html';  // Aquí rediriges a la página principal
+        });
+    </script>
+</body>
+</html>

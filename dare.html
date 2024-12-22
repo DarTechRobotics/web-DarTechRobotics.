@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="dar.js"></script>
+    <link rel="stylesheet" href="dar.css">
+    <title>DarTech Robotics</title>
+</head>
+<body>
+    <!-- Barra superior con el número de contacto y el nombre del usuario -->
+    <header>
+        <div class="user-info">
+            <span id="username">Usuario</span>
+            <span id="contact-number">
+                <a href="https://wa.me/593988124506" target="_blank" id="whatsapp-link">+593 988124506</a>
+            </span>
+        </div>
+    </header>
+
+    <!-- Logo y título -->
+    <div class="logo">
+        <a href="javascript:location.reload();">
+            <img src="Captura de pantalla 2024-12-07 a la(s) 12.31.40 a. m..png" width="100px" alt="DarTech Robotics" id="logo-img">
+        </a>
+    </div>
+    <div class="title">
+        <h1>DarTech Robotics™</h1>
+    </div>
+
+    <!-- Sección "Conócenos" -->
+    <div class="Conocenos">
+        <div class="Conoce">
+            <h1>¡Conócenos!</h1>
+        </div>
+
+        <div class="p1">
+            <p>
+                Dartech Robotics es una microempresa innovadora dedicada al desarrollo y la implementación de soluciones robóticas avanzadas para una variedad de sectores. Nuestra misión es ofrecer productos y servicios que permitan a nuestros clientes automatizar procesos, aumentar su eficiencia y mejorar su competitividad.
+            </p>
+        </div>
+        <div  class="imagen1">
+            <img id="Imagen" src="conoce.png" width="300px">
+        </div>
+        <div class="boton1">
+            <input type="button" value="Conoce más" onclick="TXimg();" />
+        </div>
+    </div>
+
+    <div class="fondo2">
+        <div class="p2">
+            <p>
+                Especializados en la creación de robots inteligentes y sistemas automatizados, en Dartech Robotics nos enfocamos en brindar soluciones personalizadas que se adapten a las necesidades de cada cliente. Ya sea en la industria manufacturera, la educación o en la automatización de entornos domésticos, nuestro equipo de ingenieros y diseñadores trabaja de manera colaborativa para ofrecer tecnologías accesibles, intuitivas y de alta calidad.
+            </p>
+        </div>
+        <div class="imagen2">
+            <img id="Imagen2" src="Venta de diseños.png" width="300px"/>
+        </div>
+        <div class="boton2">
+            <p> <input type="button" value="Conocer más" onclick="TXimg1();"></p>
+        </div>
+    </div>
+
+    <div class="fondo3">
+        <div class="p3">
+            <div class="Sobre">
+                <h1>Sobre nosotros!!</h1>
+            </div>
+            <p>
+                Con una visión orientada a la innovación constante, Dartech Robotics busca ser un referente en el sector, proporcionando productos que no solo optimicen procesos, sino que también contribuyan al desarrollo sostenible y al bienestar de las comunidades. Nos enorgullece ofrecer soluciones que transformen el futuro de la robótica y que respondan a los desafíos de un mundo cada vez más digitalizado.
+            </p>
+        </div>
+        <div class="imagen3">
+            <img id="Imagen3" src="imagen4.png.jpeg" width="300px">
+        </div>
+        <div class="boton3">
+            <p> <input type="button" value="Conocenos!!" onclick="TXimg2();"></p>
+        </div>
+    </div>
+
+    <!-- Sección "Qué ofrecemos" con precios y servicios -->
+    <div class="fondo4">
+        <h1 class="ofrecemos">¿Qué ofrecemos como microempresa?</h1>
+        <div class="opc">
+            <!-- Robótica -->
+            <div class="contenedorImagen">
+                <img src="capacitaciones.png" width="300px" alt="Robótica">
+                <h2>Capacitación</h2>
+                <p>Se ofrece capacitaciones a todo el ámbito relacionado con robótica. Da click y consulta más! Precio: $10 - $20</p>
+                <a href="https://wa.me/593988124506?text=Me%20interesa%20la%20Robótica" target="_blank">
+                    <button class="whatsapp-button">❗❗Me gustaría saber sobre las capacitaciones.❗❗</button>
+                </a>
+            </div>
+            
+            <!-- Venta de Productos -->
+            <div class="contenedorImagen">
+                <img src="Captura de pantalla 2024-12-21 a la(s) 9.00.02 p. m..png" width="300px" alt="Venta de productos">
+                <h2>Venta de Robots</h2>
+                <p>Venta de robots para competencias profesionales. ¡Es tu oportunidad! Precio: Desde $80</p>
+                <a href="https://wa.me/593988124506?text=Me%20interesa%20la%20Venta%20de%20Productos" target="_blank">
+                    <button class="whatsapp-button">❗❗Quiero más información sobre la venta de robots 🤖❗❗</button>
+                </a>
+            </div>
+
+            <!-- Asesoría -->
+            <div class="contenedorImagen">
+                <img src="Post de instagram asesorías online rosado claro..png" width="300px" alt="Asesoría">
+                <h2>Servicios de Asesoría</h2>
+                <p>Consulta, arreglos para tu robot, mejoramos tu robot o creamos programaciones o diseños para tus proyectos. Precio: $5 - $20</p>
+                <a href="https://wa.me/593988124506?text=Me%20interesa%20la%20Asesoría" target="_blank">
+                    <button class="whatsapp-button">❗❗Contactar para Asesoría❗❗</button>
+                </a>
+            </div>
+
+            <!-- Nuevos servicios (Sección 4) -->
+            <div class="contenedorImagen">
+                <img src="Brown and Yellow Warm and Youthful Skincare Product Review Instagram Post.png" width="300px" alt="Nuevo Servicio 1">
+                <h2>Desarrollo de Proyectos</h2>
+                <p>Desarrollamos proyectos personalizados según tus necesidades. ¡Hazlo realidad! Precio: ¨indefinido¨</p>
+                <a href="https://wa.me/593988124506?text=Me%20interesa%20el%20desarrollo%20de%20proyectos" target="_blank">
+                    <button class="whatsapp-button">❗❗Solicitar Proyecto❗❗</button>
+                </a>
+            </div>
+
+            <!-- Nuevos servicios (Sección 5) -->
+            <div class="contenedorImagen">
+                <img src="Captura de pantalla 2024-12-21 a la(s) 9.37.04 p. m..png" width="300px" alt="Nuevo Servicio 2">
+                <h2>Impreciones 3d</h2>
+                <p>Ofrecemos la facilidad a tu acceso a piesas de impresion 3d. Precio: ¨Por horas¨</p>
+                <a href="https://wa.me/593988124506?text=Me%20interesa%20la%20automatización%20industrial" target="_blank">
+                    <button class="whatsapp-button">❗❗Más info sobre Automatización❗❗</button>
+                </a>
+            </div>
+
+            <!-- Nuevos servicios (Sección 6) -->
+            <div class="contenedorImagen">
+                <img src="Venta Diseños.png" width="300px" alt="Nuevo Servicio 3">
+                <h2>Diseños en 3d</h2>
+                <p>Te creamos , te damos diseños personalisados , libre a tu imaginacion. Precio: $5 - $50</p>
+                <a href="https://wa.me/593988124506?text=Me%20interesa%20la%20consultoría%20en%20robótica" target="_blank">
+                    <button class="whatsapp-button">❗❗Quiero Un diseño profesional❗❗</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Verificar si ya hay un usuario guardado en localStorage
+        if (localStorage.getItem('username')) {
+            document.getElementById('username').textContent = localStorage.getItem('username');
+        }
+
+        // Cambiar imagen de la primera sección
+        TXimg = function() {
+            let cmpImagen = document.getElementById('Imagen');
+            cmpImagen.src = 'Brown and Yellow Warm and Youthful Skincare Product Review Instagram Post.png';
+        }
+
+        // Cambiar imagen de la segunda sección
+        TXimg1 = function() {
+            let cmpImagen = document.getElementById('Imagen2');
+            cmpImagen.src = 'Venta Diseños.png';
+        }
+
+        // Cambiar imagen de la tercera sección
+        TXimg2 = function() {
+            let cmpImagen = document.getElementById('Imagen3');
+            cmpImagen.src = 'imagen4.0.png.jpeg';
+        }
+    </script>
+
+    <!--Derechos de autor-->
+    <div class="DerechosDeAutor">
+        <h2>Derechos de autor de DarTech Robotics.</h2>
+        <div class="TipoP">
+            <h5>
+                Todos los contenidos de este sitio web, incluyendo textos, imágenes, logotipos, diseños, códigos y demás materiales, son propiedad exclusiva de "DarTech Robotics" y de su creador "Darwin Zambrano", esta protegido por las leyes de derechos de autor y de propiedad intelectual aplicable. Queda estrictamente prohibida su reproducción, distribución, modificación, o cualquier uso no autorizado por el consentimiento previo o por escrito de "DarTech Robotics". Para consultas sobre el uso de nuestros materiales, por favor contáctanos a través de nuestros canales oficiales.
+            </h5>
+        </div>
+        <div class="Fecha">
+            <p>Derechos de autor © 2024-12-10</p>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
